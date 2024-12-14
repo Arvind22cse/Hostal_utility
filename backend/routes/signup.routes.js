@@ -1,0 +1,22 @@
+import express from 'express';
+import mongoose from "mongoose";
+import Signup from '../models/signup.model.js';
+import { create_account ,signin} from '../controllers/signup.controllers.js';
+import { create_account_admin,signin_admin } from '../controllers/logadmin.controllers.js';
+import { create_complaint ,get_hostalstud} from '../controllers/complaint.controllers.js';
+import { get_complaints } from '../controllers/complaint.controllers.js';
+import { create_food, get_food } from '../controllers/Food.controllers.js';
+import { create_announce, get_announcement } from '../controllers/Announcement.controllers.js';
+const router=express.Router();
+router.post("/signup", create_account);
+router.post("/signin", signin);
+router.post("/signupadmin",create_account_admin);
+router.post("/signinadmin",signin_admin)
+router.post("/complaint",create_complaint);
+router.get("/getcomplaints", get_complaints);
+router.post("/create_food",create_food);
+router.get("/getfood", get_food);
+router.get("/hostalstud",get_hostalstud);
+router.post("/announce",create_announce);
+router.get("/getannounce",get_announcement);
+export default router;

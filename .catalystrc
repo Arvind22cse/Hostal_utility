@@ -1,0 +1,48 @@
+{
+  "defaults": {
+    "project": 2,
+    "env": 1
+  },
+  "actives": {
+    "project": 2,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "12148000000011093",
+      "name": "arvind",
+      "domain": {
+        "id": "50023951165",
+        "name": "arvind-60035373685.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60035373685",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "id": "12148000000012001",
+      "name": "yo",
+      "domain": {
+        "id": "50023951238",
+        "name": "yo-60035373685.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60035373685",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}

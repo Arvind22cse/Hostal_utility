@@ -1,0 +1,15 @@
+{
+  "appsail": {
+    "name": "Hostall",
+    "source": "D:\\backend_deploy"
+  },
+  "ignore": [
+    "node_modules",
+    "frontend/node_modules",
+    "frontend/dist/*",
+    ".git",
+    ".env",
+    "logs",
+    "temp"
+  ]
+}
