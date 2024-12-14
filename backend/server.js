@@ -12,7 +12,7 @@ app.get("*",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"frontend","dist","index.html"));
 });
 }
-app.listen(process.env.X_ZOHO_CATALYST_LISTEN_PORT||3001, () => {
+app.listen(process.env.PORT||3001, () => {
     connectDB();
     console.log(`Server started at http://localhost:3001`);
 });
